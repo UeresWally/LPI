@@ -1,0 +1,31 @@
+Comparar dois paradigmas de programação e mostrar um trecho de cada
+
+Paradigma Orientado a Objetos
+
+    A programação Orientada a Objetos transforma estruturas de dados em Objetos com o objetivo de ter representações mais próximas da realidade.
+    Cada objetivo possui suas características e comportamento, atributos e métodos respectivamente, e são estruturados em uma classe.
+    A classe é o corpo/tipo do objeto, um exemplo de classe seria Carro que tem como atributos: marca, modelo, chassis, cor, placa, etc. e comportamentos: andar, frear, etc. e um exemplo de objeto é uno, que é um Carro, mas é diferente de um objeto gol.
+    Os objetos também podem ter outras classificações utilizando uma estrutura de herança (grande importância na programação).
+    Por exemplo: temos a classe Carro e a classe Fiat, a classe Fiat possui todos os atributos e comportamentos de Carro, então podemos dizer que Fiat "é" um carro, essa classe então herda essas características de Carro.
+    Outra classificação é feita utilizando uma estrutura chamada de interface. Nesse caso dizemos que um objeto "faz" determinada coisa.
+    No mesmo exemplo anterior: podemos criar uma interface e chamá-la de AbrirPortas, a classe Fiat pode implementar essa interface.
+    Assim dizemos que a classe Fiat 'É' um Carro e 'pode' AbrirPortas.
+    Esses objetos interagem entre si e criam um programa funcional.
+
+    Exemplo de código em Java:
+
+    public class Carro {
+        // atributos
+        private String marca;
+        private String modelos;
+        private String chassis;
+        private int ano;
+        // stuff..
+
+        // métodos/comportamentos
+        public void frear() {}
+
+        public void andarParaFrente() {}
+    }
+
+Paradigma Imperativo
