@@ -29,3 +29,33 @@ Paradigma Orientado a Objetos
     }
 
 Paradigma Imperativo
+
+    A programação imperativa baseia-se no modo de funcionamento do computador,isto significa que ela tem execução sequencial baseada em comandos e no           armazenamento de dados alteráveis (variáveis) conceitos esses que são a forma como os computadores executam os programas em linguagem de máquina.
+    Linguagens imperativas são baseadas em 3 conceitos:
+        Variáveis: que são locação na memória que correspondem a um endereço e um valor de armazenamento.
+        Comando de atribuição: esse introduz uma dependencia de ordem no programa, o valor de uma variável é diferente antes e depois de um comando de atribuição.
+        Sequência: o significado do programa depende da forma que os comandos são escritos e executados.
+    As funções em linguaegm de programação imperativa, são descritos como algoritmos que especificam como processar um intervalo de valores, por exemplo, laços     são  usados  para  varrer  uma  seqüência  de  localizações  de  memória  tal  como  vetores,  ou  para  acumular  umvalor em uma variável específica.
+    Três exemplos de linguagens imperativas são, Fortran, Pascal, C.
+    Exemplo em Pascal:
+        Neste programa o computador mostra na tela todos os caracteres do código ASCII. 
+        
+            PROGRAM Ascii(INPUT,OUTPUT);
+            VAR i,n,val:INTEGER;
+                    c:CHAR;
+            BEGIN
+                 n:=0;
+                 FOR i:=0 TO 256 DO
+                 BEGIN
+                      n:=n+1;
+                      WRITELN(i,' -> ',CHR(i),' ');
+                      IF n=22 THEN BEGIN
+                         WRITELN('c para continuar');
+                         REPEAT
+                         READLN(c);
+                         UNTIL c='c';
+                         n:=0;
+                         END;
+                 END;
+                 READLN
+            END.
